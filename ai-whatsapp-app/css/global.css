@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: url(https://i.ibb.co/q9mygMq/background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Status Bar */
+
+.status-bar {
+  height: 75px;
+  background: #004e45;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+}
+
+.status-bar>div {
+  width: min(90%, 800px);
+  margin: auto;
+  display: flex;
+}
+
+.avatar {
+  margin: 10px 0 10px 10px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user-info>li {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user-info .online {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Chat Container */
+
+.main-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-box {
+  width: min(90%, 800px);
+  height: 80%;
+  /* background-color: #f2f2f2; */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  overflow: scroll;
+  background: url("https://i.ibb.co/3s1f9Jq/default-wallpaper.png") repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* overflow: visible; */
+}
+
+/* Chat Messages  */
+
+.chat-message {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.sender {
+  background: #e1ffc7;
+  border-radius: 5px 0px 5px 5px;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.receiver {
+  background: #fff;
+  border-radius: 0px 5px 5px 5px;
+  float: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Bottom Box, i.e. Form  */
+
+.compose {
+  background-color: white;
+  background: #005e54;
+  width: 100%;
+  height: 20%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background: url(https://i.ibb.co/q9mygMq/background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 1.19), rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
+ }
+
+
+form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.form-group {
+  min-width: 200px;
+  color: white;
+  display: inline-block;
+  padding: 4px;
+  margin: 14px;
+  border-radius: 10px;
+
+}
+
+textarea {
+  padding: 12px 20px;
+  margin: 20px;
+  margin-left: 0px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 60%;
+  border: 1px solid #ccc;
+  background-color: rgba(23, 72, 62, 0.487);
+  color: white;
+  border-radius: 4px;
+  resize: none;
+}
+
+
+select {
+  margin: 6px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  background: #005e54;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Send Button */
+
+.send {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  flex: 0 0 auto;
+  margin-right: 8px;
+  padding: 0;
+  position: relative;
+  outline: none;
+  margin-left: .5rem;
+}
+
+.circle {
+  background: #008a7c;
+  border-radius: 50%;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.circle:hover {
+  opacity: 0.9;
+}
+
+
+/* Slider */
+
+.slidecontainer {
+  width: 100px;
+  padding: 10px;
+}
+
+.token {
+  margin: 10px;
+  -webkit-appearance: none;
+  width: min(20%, 500px);
+  height: 12px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  /* opacity: 0.7; */
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.token::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #005e54;
+  /* background: white; */
+  cursor: pointer;
+}
+
+.token::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
