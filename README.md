@@ -2,4 +2,5 @@
 
 Use Chat-GPT like Whatsapp
 
-![Uploading single-page-ui.png…]()
+
+![alt text](https://github.com/github-009/ai-whatsapp-app/0-screenshots/single-page-ui.png?raw=true)
